@@ -377,3 +377,120 @@ const countVowel=(anyWord)=>{
         }
     });
     */
+
+     // Class and Object============================================
+
+     //You are creating a website for your college.Cretae a class User with 2 properties, name and email. It also has methos call viewData() that allow user to view website data.
+     /* 
+     class User{
+        constructor(Uname,Uemail){
+            this.Uname=Uname;
+            this.Uemail=Uemail;
+        }
+        viewData(){
+            console.log(`view website data}`);
+        }
+      }
+      let user1=new User("hari","hari@gmail.com");
+      let user2=new User("ram","ram@gmail.com");
+      let user3=new User("shree","shree@gmail.com");
+      user1.viewData();
+      user2.viewData();
+      user3.viewData();
+      */
+
+      //Create a new class called Admin which inherits from User.Add a new method called w=editData that allows it to edit website data.
+      /*
+      class User{
+        constructor(Uname,Uemail){
+            this.Uname=Uname;
+            this.Uemail=Uemail;
+        }
+        viewData(){
+            console.log(`view website data`);
+        }
+      }
+      class Admin extends User{
+        constructor(Uname,Uemail){
+            super(Uname,Uemail);
+            this.Uname=Uemail;
+            this.Uname=Uemail;
+        }
+        editData(){
+            console.log("edit data");
+        }
+      }
+      
+      let obj=new Admin("admin","admin@gmail.com");
+      obj.viewData();
+      obj.editData();
+*/
+
+// async-await  Promise-chain  callback-hell=============================
+function getData(dataId){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            console.log("data",dataId);
+            resolve("success");
+        },2000);
+    });
+}
+// callback-hell===============================
+/*
+getData(1,()=>{
+    console.log("fetching data2");
+    getData(2,()=>{
+        console.log("fetching data3");
+        getData(3,()=>{
+            console.log("fetching data4");
+                getData(4,()=>{
+                console.log("fetching data5");
+            });
+        });
+    });
+});
+*/
+// Promise-chain======================================
+/*
+getData(1)
+    .then((res)=>{
+        return getData(2);
+    })
+        .then((res)=>{
+            return getData(3);
+        })
+            .then((res)=>{
+                return getData(4);
+            })
+            .then((res)=>{
+                return getData(5);
+            });
+*/
+// async-await==================================
+/* write getAllData() in console we have to call it
+async function getAllData() {
+    await getData(1);
+    await getData(2);
+    await getData(3);
+    await getData(4);
+    await getData(5);
+}
+*/
+//using IFFI we dont need to write getAllData() in console
+/*
+(async function() {
+    await getData(1);
+    await getData(2);
+    await getData(3);
+    await getData(4);
+    await getData(5);
+})();
+//OR
+(async () => {
+    await getData(1);
+    await getData(2);
+    await getData(3);
+    await getData(4);
+    await getData(5);
+})();
+*/
