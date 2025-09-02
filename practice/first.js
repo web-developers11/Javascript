@@ -494,3 +494,49 @@ async function getAllData() {
     await getData(5);
 })();
 */
+
+//Fetch data from API https://catfact.ninja/fact
+/*
+let URL="https://catfact.ninja/facts";
+let BREED="https://catfact.ninja/breeds";
+
+let facts=document.querySelector("#cat-facts");
+let breeds=document.querySelector("#cat-breeds");
+let apidata=document.querySelector("#api-data");
+
+
+let getCatsFacts= facts.addEventListener("click",async()=>{
+    console.log("getting cat facts")
+    let response= await fetch(URL);//JSON format
+    console.log("data in JSON format=",response);//response is promise
+    let catfacts=await response.json();
+    apidata.innerText=catfacts.data[1].fact;
+    console.log("catfacts in form of JSON Object",catfacts);//json object form or readable form
+    console.log("catfacts in form of JSON Object",catfacts.data[0]);//catfacts return the reponse in "object" and "data" is the property of that "object" which is in form of array 
+});
+
+let getCatsBreeds= breeds.addEventListener("click",async()=>{
+    console.log("getting cat breeds")
+    let response= await fetch(BREED);//JSON format
+    console.log("data in JSON format=",response);//response is promise
+    let catbreeds=await response.json();
+    apidata.innerText=catbreeds.data[1].breed;
+    console.log("catbreeds in form of JSON Object",catbreeds);//json object form or readable form
+    console.log("catbreeds in form of JSON Object",catbreeds.data[0]);//catfacts return the reponse in "object" and "data" is the property of that "object" which is in form of array 
+    console.log("catbreeds in form of JSON Object",catbreeds.data[1].breed);
+});
+*/
+//Using Promise chaining
+/*
+let getCatsFacts=facts.addEventListener("click",()=>{
+    fetch(URL)
+        .then((respone) =>{
+            return respone.json();
+        })
+        .then((data)=>{
+            console.log("catfacts in form of JSON Object",data.data[1].fact);//json object form or readable form
+            apidata.innerText=data.data[1].fact;
+        })
+});
+*/
+
