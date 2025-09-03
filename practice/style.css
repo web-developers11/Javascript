@@ -12,4 +12,5 @@ background-color: black;
 
 .lightMode{
 background-color: white;
+box-sizing: border-box;
 }

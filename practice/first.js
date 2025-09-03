@@ -427,14 +427,14 @@ const countVowel=(anyWord)=>{
 */
 
 // async-await  Promise-chain  callback-hell=============================
-function getData(dataId){
+/*function getData(dataId){
     return new Promise((resolve,reject)=>{
         setTimeout(()=>{
             console.log("data",dataId);
             resolve("success");
         },2000);
     });
-}
+}*/
 // callback-hell===============================
 /*
 getData(1,()=>{
