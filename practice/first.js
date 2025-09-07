@@ -540,3 +540,92 @@ let getCatsFacts=facts.addEventListener("click",()=>{
 });
 */
 
+//KG Tutorials
+
+/* Create an array of number[5,6] .Add 4 at the beggining and 7 at the end of the array*/
+/*
+    let arr=[5,6];
+    arr.unshift(4);
+    console.log(arr);
+    arr.push(7);
+    console.log(arr);
+*/
+
+/* Create a method to return an element at a particular position in the array*/
+/*
+    let arr=[7,4,9,2,4,8,5,0,2,9,7,9,7,9,8];
+
+    function arayPosition(posi){
+            posi=posi-1;//index=position-1;
+            posi=arr[posi];
+            console.log(posi);
+            return posi;   
+    }
+    arayPosition(6);//8
+*/
+
+/*Create an array copy using slice method*/
+/*
+let arr=[7,4,9,2,4,8,5,0,2,9,7,9,7,9,8];
+let newArr=arr.slice(4,8);//4,8,5,0
+console.log(newArr);
+*/
+
+/*Create a while loop that exists after counting 5 prime number*/
+   /* function isPrime(num){
+        for(let i=2; i<num; i++){
+            if(num % i==0){
+                //console.log(num);
+                return false;
+            }
+        }
+        //console.log(num);
+        return true;
+    }
+    //isPrime(4);
+
+    let num=2;
+    let i=0
+    while(i<5){
+        if(isPrime(num)){
+            console.log(num);
+             i++;
+        }
+        num++; 
+    }
+    */
+/*Create a  loop that prints number from 1 to 10 in reverse order*/
+/*
+    let arr=[1,2,3,4,5,6,7,8,9,10];
+    for(i=0;i<10;i++){
+        arr[i]=arr.length-i;
+        //console.log(arr.length);
+        console.log(arr[i]);
+    }
+*/
+/*Using continue only print positive numbers from the given array*/
+/*    
+    let arr=[1,-6,5,8,-98,99];
+        for(let i=0; i<arr.length; i++){
+        if(arr[i]>0){
+            continue;  
+            console.log(arr[i]);
+        }         
+    }
+*/ 
+/*Using accumalator pattern concatenate all the string in the given array['KG' ,'Coding', 'JS','Course','is','best']*/
+   /* 
+    let arr=['KG' ,'Coding', 'JS','Course','is','best'];
+    let result="";// should be empty string not empty array
+        /* for(let i=0; i<arr.length; i++){
+            result=result + arr[i] + ' ';
+        }
+        */
+    //OR
+        /*for(let i of arr){
+            result=result + i + " ";
+        }
+        console.log(result);
+   //OR
+        console.log(arr.join(" "));
+   */

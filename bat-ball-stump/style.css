@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: darkgray;
+    text-align: center;
+}
+.game-div{
+   width: 160px;
+   height: 170px;  
+   
+}
+#choice-container{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #ball
+    {
+        width: 150px;
+        height: 150px;
+            background-image: url(images/balll.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+             cursor: pointer;
+    }
+    #stump
+    {
+        width: 150px;
+        height: 150px;
+            background-image: url(images/stump.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: pointer;
+
+    }
+    #bat
+    {
+        width: 150px;
+        height: 150px;
+            background-image: url(images/bat.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: pointer;
+    }
+    .game-object{
+        margin: 10px;
+    }
+}
+#score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    #user-score{
+          margin: 20px;
+        
+        p{
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+    }
+    #comp-score{
+          margin: 20px;
+
+        
+    }
+}
+p{
+            font-size: 1.5rem;
+            font-weight: bold;
+        }

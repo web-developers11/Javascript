@@ -15,7 +15,7 @@ choices.forEach((choice) => {
 
 const genCompChoice=()=>{
     let options=["rock" , "paper" ,"scissor"];
-    let compIdx=Math.floor(Math.random()*3);
+    let compIdx=Math.floor(Math.random()*3); //game between user nad computer so use random() to take any random vlaue from computer
     return options[compIdx];
 };
 const playGame = (userChoice)=>{
