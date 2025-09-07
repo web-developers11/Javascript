@@ -55,11 +55,11 @@ addBtn.addEventListener("click", ()=>{
             console.log(toDoList.length);
             
            newHtml+= 
-           `<div>
+           `
            <span class="output-data">${toDoList[i].item}</span>
            <span  class="output-data">${toDoList[i].date}</span> 
            <button id="delete-btn" class="output-data" onclick="toDoList.splice(${i},1); displayOutput();">Delete</button>
-           </div>`;
+           `;
            //console.log(newHtml);
            
         }

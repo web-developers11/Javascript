@@ -8,7 +8,7 @@
     align-items: center;
 }
 .input-data{
-    margin: 0.5rem;
+    margin-top: 0.5rem;
     padding: 0.8rem;
     font-size: 1.2rem;
     font-weight: 500;
@@ -22,15 +22,15 @@
     padding: 1rem 3rem;
     border-radius: 10px;;
 }
-.output-div{
-   div{
+.grid-container{
        display: grid;
-       grid-template-columns: 289px 209px 170px;
        justify-content: center;
-   }
+       grid-template-columns: 300px 200px 150px;
+       column-gap: 2rem;
+       
 }
  .output-data{
-    margin: 1rem;
+    margin-top: 1rem;
     font-size: 1.2rem;
     font-weight: 500;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -41,7 +41,6 @@
     background-color: green;
     border: none;
     color: white;
-    /* padding: 1rem; */
     border-radius: 10px;
     height: 60px;
 } 
