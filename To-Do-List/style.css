@@ -23,10 +23,13 @@
     border-radius: 10px;;
 }
 .output-div{
-    /* display: block; */
-   text-align: center;
+   div{
+       display: grid;
+       grid-template-columns: 289px 209px 170px;
+       justify-content: center;
+   }
 }
-.output-data{
+ .output-data{
     margin: 1rem;
     font-size: 1.2rem;
     font-weight: 500;
@@ -38,6 +41,6 @@
     background-color: green;
     border: none;
     color: white;
-    padding: 1rem 3rem;
+    padding: 1rem;
     border-radius: 10px;
-}
+} 

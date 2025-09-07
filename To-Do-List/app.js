@@ -56,8 +56,8 @@ addBtn.addEventListener("click", ()=>{
             
            newHtml+= 
            `<div>
-           <span id="todo-item" class="output-data">${toDoList[i].item}</span>
-           <span id="todo-date" class="output-data">${toDoList[i].date}</span> 
+           <span class="output-data">${toDoList[i].item}</span>
+           <span  class="output-data">${toDoList[i].date}</span> 
            <button id="delete-btn" class="output-data" onclick="toDoList.splice(${i},1); displayOutput();">Delete</button>
            </div>`;
            //console.log(newHtml);
