@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Currency converter</h1>
+        <div class="main-conatiner">
+            <form>
+                <div class="main-container">
+                <div class="amount">
+                    <p>Enter Amount</p>
+                    <input type="text" value="1">
+                </div>
+                <div class="slect-container">
+                    <div class="from">
+                        <p>From</p>
+                        <div class="from-container">
+                            <img src="https://flagsapi.com/US/flat/64.png">
+                            <select name="from">
+
+                            </select>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-right-left"></i>
+                    <div class="to">
+                        <p>To</p>
+                        <div class="to-container">
+                            <img src="https://flagsapi.com/IN/flat/64.png">
+                            <select name="to">
+                               
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <p class="msg">1USD=83INR</p>
+                <button>Get Exchange Rate</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="code.js"></script>
+    <script src="app.js"></script><!--always write this(main js) at end-->
+    
+</body>
+</html>
