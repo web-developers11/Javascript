@@ -1,0 +1,43 @@
+.h1{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-data{
+    margin: 0.5rem;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+#add-btn{
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 10px;;
+}
+.output-div{
+    /* display: block; */
+   text-align: center;
+}
+.output-data{
+    margin: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+
+}
+#delete-btn{
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+}
