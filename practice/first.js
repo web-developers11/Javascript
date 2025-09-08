@@ -629,3 +629,59 @@ console.log(newArr);
    //OR
         console.log(arr.join(" "));
    */
+
+  //Array Advanced function:--
+
+/*Create variable multiply and assign a function to this variable taht multiplies two numbers. Call this method from the variable */
+    /*
+        let multiply = (num1,num2)=>{
+            console.log(num1 * num2);
+        };
+        multiply(3,5);
+    */
+/*Create a function runTwice that takes a function as parameter and then run that method twice*/
+/*
+    let runTwice = otherfunction=>{
+        otherfunction();
+        otherfunction();
+    };
+    let printGreet = ()=>{
+        console.log("hello");
+    }
+    runTwice(printGreet);
+*/
+
+/*Create a button which should grow double in size on clicking after 2second*/
+/*
+    let btn=document.querySelector("#btn-id");
+    btn.addEventListener('click',()=>{
+        setTimeout(()=>{
+            btn.classList.add("double-btn")
+        },2000);    
+    });
+*/
+
+/*Create a function that sums an array of numbers. Do this using forEach-loop*/
+/*
+    let arr=[1,2,3,4,5,6,7,8,9];
+    let sum=0;
+    arr.forEach(num=>{
+    sum=sum+num;
+    });
+    console.log(sum);
+*/
+
+/*Create a function that takes an array of numbers. and return their square using map-function*/
+/*
+    let arr=[1,2,3,4,5,6,7,8,9];
+    let squ=arr.map(num=>{
+        //console.log(num * num);
+        return num * num;
+    });
+    console.log(squ);
+*/
+
+
+
+
+
