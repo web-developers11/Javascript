@@ -681,7 +681,19 @@ console.log(newArr);
     console.log(squ);
 */
 
+/*Array sorting descending order 20,12,111,241,54,78. */
+/*
+    let arr=[20,12,111,241,54,78];
+    for(let i=0;i<arr.length-1;i++){
+        for(let j=0,sort;j<arr.length-1;j++){
+            if(arr[j]<arr[j+1]){
+                sort=arr[j+1];
+                arr[j+1]=arr[j];
+                arr[j]=sort;
+            }
 
-
-
+        }
+    }
+    console.log(arr);// 214 111 78 54 20 12
+*/
 
